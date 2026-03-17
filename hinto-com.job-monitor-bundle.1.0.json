@@ -1,0 +1,21 @@
+{
+    "manifests": {
+        "hinto-com/job-monitor-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Hinto\\Bundle\\JobMonitorBundle\\HintoJobMonitorBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/hinto_job_monitor.yaml": "hinto_job_monitor:\n    connection: 'doctrine.dbal.default_connection'\n",
+                "config/routes/hinto_job_monitor.yaml": "hinto_job_monitor:\n    resource: \"@HintoJobMonitorBundle/src/Controller/\"\n    type: attribute\n"
+            },
+            "ref": "925a3438dc1badb4d36671272ec40d8bc36c2c95"
+        }
+    }
+}
