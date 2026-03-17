@@ -1,3 +1,14 @@
-hinto_job_monitor:
-    resource: "@HintoJobMonitorBundle/src/Controller/"
-    type: attribute
+hinto_job_monitor_api_stats:
+    path: /api/admin/jobs/stats
+    controller: Hinto\Bundle\JobMonitorBundle\Controller\Api\JobDashboardController::stats
+    methods: [GET]
+
+hinto_job_monitor_web_index:
+    path: /admin/jobs
+    controller: Hinto\Bundle\JobMonitorBundle\Controller\Web\JobDashboardController::index
+    methods: [GET]
+
+hinto_job_monitor_web_retry:
+    path: /admin/jobs/retry/{id}
+    controller: Hinto\Bundle\JobMonitorBundle\Controller\Web\JobDashboardController::retry
+    methods: [POST]
