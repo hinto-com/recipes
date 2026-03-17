@@ -1,0 +1,2 @@
+# recipes
+Symfony recipes repository
