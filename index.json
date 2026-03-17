@@ -1,12 +1,20 @@
 {
+    "aliases": ["job-monitor"],
     "recipes": {
-        "hinto-com/job-monitor-bundle": ["1.0"]
+        "hinto-com/job-monitor-bundle": [
+            "1.0"
+        ]
     },
+    "recipe-conflicts": [],
+    "versions": [],
     "branch": "main",
-    "is_contrib": true,
+    "is_contrib": false,
     "_links": {
         "repository": "github.com/hinto-com/recipes",
-        "origin_template": "{package}:{version}@github.com/hinto-com/recipes:main",
-        "recipe_template": "https://raw.githubusercontent.com/hinto-com/recipes/main/{package_dotted}.{version}.json"
+        "origin_template": "{package}:{version}@github.com/hinto-com/recipes:source-branch",
+        "recipe_template": "https://raw.githubusercontent.com/hinto-com/recipes/target-branch/{package_dotted}.{version}.json",
+        "recipe_template_relative": "{package_dotted}.{version}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/hinto-com/recipes/target-branch/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
     }
 }
