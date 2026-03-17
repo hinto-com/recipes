@@ -1,0 +1,2 @@
+hinto_job_monitor:
+    connection: 'doctrine.dbal.default_connection'

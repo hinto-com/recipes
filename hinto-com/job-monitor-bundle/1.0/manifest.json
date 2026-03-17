@@ -1,0 +1,8 @@
+{
+    "bundles": {
+        "Hinto\\Bundle\\JobMonitorBundle\\HintoJobMonitorBundle": ["all"]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    }
+}

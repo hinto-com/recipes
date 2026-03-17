@@ -1,0 +1,3 @@
+hinto_job_monitor:
+    resource: "@HintoJobMonitorBundle/src/Controller/"
+    type: attribute
